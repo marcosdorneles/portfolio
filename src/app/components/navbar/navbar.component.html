@@ -4,11 +4,28 @@
     rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
   />
+  <style>
+    svg {
+      overflow: hidden;
+      border-top: 10px;
+      margin-top: 10px;
+    }
+
+    .navbar-brand {
+      margin-left: 20px; /* Adiciona uma margem à esquerda para afastar o título da margem esquerda */
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+      color: rgba(0,0,0,.5);
+      margin-right: 10px;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="https://www.linkedin.com/in/marcos-dorneles/"> 
-      💻Marcos Dorneles
+      💻<span class="ml-2">Marcos Dorneles</span> <!-- Adiciona uma margem à esquerda do ícone -->
     </a>
 
     <div class="navbar-nav ml-auto">
