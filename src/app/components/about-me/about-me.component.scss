@@ -1,0 +1,47 @@
+.about-me-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 1px;
+    margin-right: 50px;
+  }
+  
+  .about-me-left {
+    max-width: 200px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    margin-top: -24px;
+  }
+  
+  .about-me-right {
+    width: 65%;
+    position: relative;
+  }
+  
+  .about-me-left img {
+    max-width: 100%;
+    width: 100%; /* Define a largura da imagem */
+    height: auto; /* Ajusta a altura proporcionalmente */
+    border-radius: 15%; /* Transforma a imagem em um círculo */
+  }
+  
+  .about-me-right p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+  }
+  
+  .social-links a img {
+    max-width: 30px;
+  }
+  
