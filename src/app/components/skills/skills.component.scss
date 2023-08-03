@@ -1,0 +1,45 @@
+.skills-container {
+    max-width: 600px;
+    // margin: 0 auto;
+    padding: 20px;
+    margin-left: 420px;
+  }
+  
+  .skills-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Adiciona wrap para que os itens sejam distribuídos em várias linhas */
+  }
+  
+  .skills-column {
+    flex: 1;
+    max-width: 200px; /* Define a largura máxima para cada coluna */
+    margin: 10px; /* Adiciona margem entre as colunas */
+  }
+  
+  .skills-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skills-column li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .skills-column li img {
+    width: 30px;
+    height: 30px; /* Adiciona um tamanho fixo para a altura das imagens */
+    margin-right: 10px;
+  }
+  
