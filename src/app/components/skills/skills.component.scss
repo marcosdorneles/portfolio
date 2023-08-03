@@ -18,28 +18,26 @@
     flex-wrap: wrap; /* Adiciona wrap para que os itens sejam distribuídos em várias linhas */
   }
   
-  .skills-column {
-    flex: 1;
-    max-width: 200px; /* Define a largura máxima para cada coluna */
-    margin: 10px; /* Adiciona margem entre as colunas */
-  }
-  
-  .skills-column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
   .skills-column li {
     font-size: 18px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
+    transition: transform 0.2s ease, font-size 0.2s ease; 
   }
   
   .skills-column li img {
     width: 30px;
-    height: 30px; /* Adiciona um tamanho fixo para a altura das imagens */
+    height: 30px;
     margin-right: 10px;
+  }
+  
+  .skills-column li:hover {
+    transform: scale(1.1); 
+    font-size: 20px; 
+  }
+  
+  .skills-column li img:hover {
+    height: 40px; 
   }
   

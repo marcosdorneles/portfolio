@@ -1,0 +1,39 @@
+.card-body a {
+    color: black; 
+    text-decoration: none; 
+  }
+.card-text  {
+    color: black; 
+    text-decoration: none; 
+  }
+  .card-title  {
+    color: black; 
+    text-decoration: none; 
+  }
+
+  .card {
+    transition: transform 0.2s; /* Define a transição de 0.2 segundos para o efeito */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do card em 5% ao passar o mouse sobre ele */
+  }
+  .card {
+    transition: transform 0.2s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  /* Define uma altura máxima para as imagens dos cards */
+  .card-img-top {
+    max-height: 210px; /* Ajuste o valor conforme necessário */
+    object-fit: cover; /* Evita distorção da imagem */
+  }
+
+  /* Limita a altura do texto dentro dos cards */
+  .card-text {
+    max-height: 150px; /* Ajuste o valor conforme necessário */
+    overflow: hidden;
+  }
