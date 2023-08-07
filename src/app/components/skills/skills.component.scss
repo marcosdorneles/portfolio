@@ -1,43 +1,48 @@
 .skills-container {
-    max-width: 600px;
-    // margin: 0 auto;
-    padding: 20px;
-    margin-left: 420px;
+  max-width: 600px;
+  padding: 20px;
+  margin: 0 auto; /* Centraliza o container */
+}
+
+.skills-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-column li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease, font-size 0.2s ease;
+}
+
+.skills-column li img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.skills-column li:hover {
+  transform: scale(1.1);
+  font-size: 20px;
+}
+
+.skills-column li img:hover {
+  height: 40px;
+}
+
+/* Media query para ajustar o layout em telas menores */
+@media (max-width: 768px) {
+  .skills-column {
+    flex-basis: 50%; /* Reduz o tamanho das colunas para 50% em telas menores */
   }
-  
-  .skills-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .skills-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Adiciona wrap para que os itens sejam distribuídos em várias linhas */
-  }
-  
-  .skills-column li {
-    font-size: 18px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    transition: transform 0.2s ease, font-size 0.2s ease; 
-  }
-  
-  .skills-column li img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-  
-  .skills-column li:hover {
-    transform: scale(1.1); 
-    font-size: 20px; 
-  }
-  
-  .skills-column li img:hover {
-    height: 40px; 
-  }
-  
+}

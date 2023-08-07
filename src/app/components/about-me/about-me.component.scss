@@ -3,10 +3,11 @@
   align-items: flex-start;
   justify-content: space-between;
   margin-top: 50px;
-  margin-left: auto; /* Centraliza horizontalmente */
-  margin-right: auto; /* Centraliza horizontalmente */
-  max-width: 800px; /* Define uma largura máxima */
+  margin-left: auto; 
+  margin-right: auto; 
+  max-width: 800px; 
 }
+
 
 .about-me-left {
   max-width: 200px;
@@ -46,3 +47,40 @@
   max-width: 30px;
 }
 
+
+@media (max-width: 768px) {
+  .skills-column {
+    flex-basis: 100%; 
+  }
+
+  .about-me-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 50px; 
+  }
+
+  .about-me-left {
+    margin-bottom: 20px;
+  }
+
+  .about-me-left img {
+    max-width: 100%;
+    width: 200px; 
+    height: auto;
+    border-radius: 15%;
+  }
+
+  .about-me-right {
+    width: 100%; 
+  }
+
+  .about-me-right h2 {
+    text-align: center; 
+  }
+
+  .social-links {
+    justify-content: center; 
+    margin-top: 20px;
+  }
+}
