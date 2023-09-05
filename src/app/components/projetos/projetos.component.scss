@@ -37,3 +37,36 @@
     max-height: 150px; /* Ajuste o valor conforme necessário */
     overflow: hidden;
   }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .card {
+    flex: 0 1 calc(33.33% - 10px); /* Distribui igualmente em 3 colunas */
+    margin-right: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+  }
+
+  .card:last-child {
+    margin-right: 0;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  /* Define uma altura máxima para as imagens dos cards */
+  .card-img-top {
+    max-height: 210px; /* Ajuste o valor conforme necessário */
+    object-fit: cover; /* Evita distorção da imagem */
+  }
+
+  /* Limita a altura do texto dentro dos cards */
+  .card-text {
+    max-height: 150px; /* Ajuste o valor conforme necessário */
+    overflow: hidden;
+  }
